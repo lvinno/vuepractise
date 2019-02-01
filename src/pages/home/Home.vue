@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>Home</div>
+    <home-header></home-header>
     <router-link to="/List">list</router-link>
   </div>
 </template>
@@ -8,7 +8,9 @@
 import HomeHeader from './components/HomeHeader'
 export default {
   name: 'Home',
-  components: { HomeHeader },
+  components: {
+     HomeHeader 
+     },
   data: function () {
     return {}
   }
