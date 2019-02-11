@@ -34,7 +34,7 @@ mounted: function(){
 },
 methods: {
   getCityInfo(){
-    axios.get('/static/mock/city.json')
+    axios.get('./static/mock/city.json')
     .then(this.handleGetCityInfoSucc)
   },
   handleGetCityInfoSucc(res){
